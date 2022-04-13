@@ -5,13 +5,13 @@ class Config:
     gpus = '-1'
     num_workers = 0
     print_freq = 1
-    save_dir = '../../output'
+    save_dir = './output'
 
     # Multi Tracker
-    multi_images_dataset = '../../2DMOT2015/train'
-    multi_labels_dataset = '../../2DMOT2015/train'
-    multi_test_images_dataset = '../../2DMOT2015/test/KITTI-17'
-    multi_load_model = '../../model_pth/fairmot_dla34.pth'
+    multi_images_dataset = './2DMOT2015/train'
+    multi_labels_dataset = './2DMOT2015/train'
+    multi_test_images_dataset = './2DMOT2015/test/KITTI-17'
+    multi_load_model = './model_pth/fairmot_dla34.pth'
     lr = 1.25e-4
     lr_step = [90, 120]
     num_epochs = 3
