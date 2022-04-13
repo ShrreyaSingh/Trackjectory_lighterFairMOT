@@ -27,6 +27,8 @@ class LoadImages:  # for inference
     std = None
     num_classes = 1
     def __init__(self, path, img_size=(640, 480)):
+
+        print('path: ' + str(path))
         if os.path.isdir(path):
             image_format = ['.jpg', '.jpeg', '.png', '.tif']
             self.files = sorted(glob.glob('%s/*.*' % path))
@@ -34,6 +36,7 @@ class LoadImages:  # for inference
             self.files = list(filter(lambda x: os.path.splitext(x)[1].lower() in image_format, self.files))
             print('self.files: ' + str(self.files))
         elif os.path.isfile(path):
+            print('Not in path')
             self.files = [path]
 
         self.nF = len(self.files)  # number of image files
