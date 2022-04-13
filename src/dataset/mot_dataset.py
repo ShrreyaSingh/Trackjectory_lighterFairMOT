@@ -30,7 +30,9 @@ class LoadImages:  # for inference
         if os.path.isdir(path):
             image_format = ['.jpg', '.jpeg', '.png', '.tif']
             self.files = sorted(glob.glob('%s/*.*' % path))
+            print('self.files: ' + str(self.files))
             self.files = list(filter(lambda x: os.path.splitext(x)[1].lower() in image_format, self.files))
+            print('self.files: ' + str(self.files))
         elif os.path.isfile(path):
             self.files = [path]
 
