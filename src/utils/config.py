@@ -5,13 +5,13 @@ class Config:
     gpus = '-1'
     num_workers = 0
     print_freq = 1
-    save_dir = '/Users/ecom-v.ramesh/Documents/Personal/2020/DL/Trackjectory/output'
+    save_dir = '../../output'
 
     # Multi Tracker
     multi_images_dataset = '/Users/ecom-v.ramesh/Documents/Personal/2020/DL/SOWp2/BDL_FairMOT/tanks/'
     multi_labels_dataset = '/Users/ecom-v.ramesh/Documents/Personal/2020/DL/SOWp2/BDL_FairMOT/tanks/'
     multi_test_images_dataset = '/Users/ecom-v.ramesh/Documents/Personal/2020/DL/Trackjectory/data/kabadi'
-    multi_load_model = '/Users/ecom-v.ramesh/Desktop/fairmot_dla34.pth'
+    multi_load_model = '../../fairmot_dla34.pth'
     lr = 1.25e-4
     lr_step = [90, 120]
     num_epochs = 3
