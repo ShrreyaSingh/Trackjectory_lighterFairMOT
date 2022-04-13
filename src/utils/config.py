@@ -8,8 +8,8 @@ class Config:
     save_dir = '../../output'
 
     # Multi Tracker
-    multi_images_dataset = '../../2DMOT2015/train/'
-    multi_labels_dataset = '../../2DMOT2015/train/'
+    multi_images_dataset = '../../2DMOT2015/train'
+    multi_labels_dataset = '../../2DMOT2015/train'
     multi_test_images_dataset = '../../2DMOT2015/test/KITTI-17'
     multi_load_model = '../../model_pth/fairmot_dla34.pth'
     lr = 1.25e-4
