@@ -112,6 +112,9 @@ class MotDataset:  # for training
         print(self.img_files)
         print(self.label_files)
 
+        print(str(opt.multi_images_dataset))
+        print('%s/*/*/*.png' % opt.multi_images_dataset)
+
         self.nID = int(1 + 1) # fot no
         self.nF = len(self.label_files)
         self.width = img_size[0]
