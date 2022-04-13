@@ -114,6 +114,8 @@ def main(**kwargs):
 
     transforms = T.Compose([T.ToTensor()])
     dataset = MotDataset(opt, (640, 480), augment=True, transforms=transforms)
+    print(type(dataset))
+    
     opt = opt.update_dataset_info_and_set_heads(opt, dataset)
     print(opt)
 
