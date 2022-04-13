@@ -112,7 +112,7 @@ class MotDataset:  # for training
         print(len(self.img_files))
         print(len(self.label_files))
 
-        print(glob.glob('../*'))
+        print(glob.glob('./*'))
 
 
         print(str(opt.multi_images_dataset))
