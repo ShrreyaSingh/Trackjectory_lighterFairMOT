@@ -106,6 +106,9 @@ class MotDataset:  # for training
         self.img_files = sorted(glob.glob('%s/*/*/*.png' % opt.multi_images_dataset))
         self.label_files = sorted(glob.glob('%s/*/*/*.txt' % opt.multi_labels_dataset))
 
+        print(self.img_files)
+        print(self.label_files)
+
         self.nID = int(1 + 1) # fot no
         self.nF = len(self.label_files)
         self.width = img_size[0]
